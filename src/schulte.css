@@ -1,0 +1,82 @@
+:root{
+    --font-size-title: 30px;
+    --margin-top-base: 10px;
+}
+
+body{
+    margin: 0px;
+}   
+
+h1{
+    font-size: var(--font-size-title);
+    height: var(--font-size-title);
+    margin: var(--margin-top-base) 0px var(--margin-top-base) 10px;
+}
+
+div{
+    display: grid;
+}
+
+p{
+    font-size: 20px;
+    margin: 0px;
+}
+
+pre{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.content{
+    margin: var(--margin-top-base);
+    width: min(calc(100vh - 20px), calc(100vw - 20px));
+    height: min(calc(100vh - var(--font-size-title) - var(--margin-top-base)*7), calc(100vw - var(--font-size-title) - var(--margin-top-base)*7));
+    justify-self: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    height: fit-content;
+    padding: 5px 20px;
+}
+
+.cell {
+    position: relative;
+    height: 10%;
+    width: 10%;
+}
+
+.cell-border {
+    display: flex;
+    border: solid;
+    height: 100%;
+    width: 100%;
+    border-width: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked {
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    left: calc(50% - 10px);
+    
+}
+
+.timer {
+    height: 20px;
+    margin: --var(--margin-top-base);
+    justify-content: center;
+}
